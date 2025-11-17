@@ -7,7 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1krewwKAmLeRSEqU8yqzyJBYUT6BtnJa-
 """
 
+
 #Champions League Final RealMadrid vs Liverpool
+
+#Analysis of Liverpool and Real Madrid in the 2018 UCL Final, focusing on attacking patterns before and after key player substitutions.
 
 #showed all passes by each player
 !pip install mplsoccer
