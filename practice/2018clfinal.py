@@ -39,6 +39,7 @@ for name, ax in zip(RMA_names, axs['pitch'].flat[:len(RMA_names)]):
 
 for ax in axs['pitch'][-1, 16 - len(RMA_names):]:
     ax.remove()
+#2018clfinal_image_1.png
 
 #---------------------------------------------------
 
@@ -58,6 +59,7 @@ for name, ax in zip(LIV_names, axs['pitch'].flat[:len(LIV_names)]):
 
 for ax in axs['pitch'][-1, 16 - len(LIV_names):]:
     ax.remove()
+#2018clfinal_image_2.png
 
 #-------------------------------------------------
 
@@ -89,6 +91,7 @@ for i, row in df.LIV_shots.iterrows():
 
 fig.suptitle('Real Madrid (blue) and Liverpool (red) shots', fontsize = 30)
 plt.show()
+#2018clfinal_image_3.png
 
 #-------------------------------------------------
 pitch = Pitch(line_color ='black')
@@ -103,7 +106,8 @@ for i, row in df_bale_shots.iterrows():
         pitch.annotate(row['player_name'], (row.x + 1, row.y - 2),ax = ax['pitch'], fontsize = 12)
     else:
         pitch.scatter(row.x, row.y, alpha = 0.2, s = 500, color ='blue', ax = ax['pitch'])
-
+#2018clfinal_image_4.png
+#----------------------------------------------------
 !pip install mplsoccer
 import numpy as np
 import pandas as pd
@@ -116,6 +120,9 @@ df, related, freeze, tactics = parser.event(18245)
 #sub player information
 subs = df.loc[df['type_name'] == 'Substitution', ['minute', 'team_name', 'player_name']]
 print(subs)
+#2018clfinal_image_5.png
+#----------------------------------------------------------
+
 #Salah left the pitch at the 29th minute
 
 #pass data before and after
@@ -138,6 +145,8 @@ bin_statistic2 = pitch.bin_statistic(after.x, after.y, bins =(16, 12), normalize
 pcm2 = pitch.heatmap(bin_statistic2, cmap ='Reds', edgecolor ='grey', ax = axs['pitch'][1])
 axs['pitch'][1].set_title('After Salah Substitution', fontsize = 16)
 plt.show()
+#2018clfinal_image_6.png
+
 
 #------------------------------------------------------
 #Real Madrid's pass heatmap
@@ -162,3 +171,14 @@ bin_statistic4 = pitch.bin_statistic(after2.x, after2.y, bins =(16, 12), normali
 pcm4 = pitch.heatmap(bin_statistic4, cmap ='Reds', edgecolor ='grey', ax = axs['pitch'][1])
 axs['pitch'][1].set_title('After Bale Substitution', fontsize = 16)
 plt.show()
+#2018clfinal_image_7.png
+#---------------------------------------------------------------
+#comment
+"""
+Liverpool's Salah was substituted due to an injury.
+Salah is one of the most important player in Liverpool attack.
+So, losing Salah was a huge damage for Liverpool.
+You can see that by looking at the pass heat map.
+In the pass heat map after the substitution, it seems that passes sere concentrated in the center and the right side where Mane was,
+and there were probably fewer attacks coming from the left side.
+
