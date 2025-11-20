@@ -181,4 +181,8 @@ So, losing Salah was a huge damage for Liverpool.
 You can see that by looking at the pass heat map.
 In the pass heat map after the substitution, it seems that passes sere concentrated in the center and the right side where Mane was,
 and there were probably fewer attacks coming from the left side.
-
+But, after Real Madrid player Bale was substituted in and entered the pitch, there was no significant change in the pass heat map compared to before. 
+This shows that Real Madrid’s attacks do not rely heavily on a single player. 
+This does not mean that Bale was not an important asset. 
+Bale scored two goals in a short amount of time, greatly contributing to the team’s attacking power and victory.
+"""
